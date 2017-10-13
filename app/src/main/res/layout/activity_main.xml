@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.allan.basketballscoreboard.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/background_border"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="@string/score_board_title"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingTop="6dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/imageStyle"
+                    android:contentDescription="@string/team_a"
+                    android:src="@drawable/cc" />
+
+                <TextView
+                    android:id="@+id/teamA"
+                    style="@style/teamNameStyle"
+                    android:text="@string/team_a" />
+
+                <TextView
+                    android:id="@+id/scoreAText"
+                    style="@style/scoreFoulStyle"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/scoreA"
+                    style="@style/scoreIntStyle"
+                    android:text="@string/zero" />
+
+                <TextView
+                    android:id="@+id/foulAText"
+                    style="@style/scoreFoulStyle"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/foulACount"
+                    style="@style/foulIntStyle"
+                    android:text="@string/zero" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/vs"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/imageStyle"
+                    android:contentDescription="@string/team_b"
+                    android:src="@drawable/gsw" />
+
+                <TextView
+                    android:id="@+id/teamB"
+                    style="@style/teamNameStyle"
+                    android:text="@string/team_b" />
+
+                <TextView
+                    android:id="@+id/scoreBText"
+                    style="@style/scoreFoulStyle"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/scoreB"
+                    style="@style/scoreIntStyle"
+                    android:text="@string/zero" />
+
+                <TextView
+                    android:id="@+id/foulBText"
+                    style="@style/scoreFoulStyle"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/foulBCount"
+                    style="@style/foulIntStyle"
+                    android:text="@string/zero" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/threeAPointer"
+                    style="@style/buttonStyle"
+                    android:text="@string/three_pointer" />
+
+                <Button
+                    android:id="@+id/twoAPointer"
+                    style="@style/buttonStyle"
+                    android:text="@string/two_pointer" />
+
+                <Button
+                    android:id="@+id/freeThrowA"
+                    style="@style/buttonStyle"
+                    android:text="@string/free_throw" />
+
+                <Button
+                    android:id="@+id/foulA"
+                    style="@style/buttonStyle"
+                    android:text="@string/foul" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/threeBPointer"
+                    style="@style/buttonStyle"
+                    android:text="@string/three_pointer" />
+
+                <Button
+                    android:id="@+id/twoBPointer"
+                    style="@style/buttonStyle"
+                    android:text="@string/two_pointer" />
+
+                <Button
+                    android:id="@+id/freeThrowB"
+                    style="@style/buttonStyle"
+                    android:text="@string/free_throw" />
+
+                <Button
+                    android:id="@+id/foulB"
+                    style="@style/buttonStyle"
+                    android:text="@string/foul" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset" />
+
+</LinearLayout>

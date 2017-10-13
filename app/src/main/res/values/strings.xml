@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Basketball Score Board</string>
+    <string name="three_pointer">+3 points</string>
+    <string name="two_pointer">+2 points</string>
+    <string name="free_throw">Free throw</string>
+    <string name="foul">Foul</string>
+    <string name="reset">Reset</string>
+    <string name="zero">0</string>
+    <string name="score">Score</string>
+    <string name="team_b">Golden State Warriors</string>
+    <string name="vs">VS</string>
+    <string name="team_a">Cleveland Cavaliers</string>
+    <string name="score_board_title">The Finals</string>
+    <string name="disqualified">DISQUALIFIED</string>
+</resources>
